@@ -1,0 +1,38 @@
+{
+  "name": "simutrans-makeobj-wrapper",
+  "version": "1.0.0",
+  "description": "Simutrans makrobj wrapper",
+  "keywords": [
+    "simutrans",
+    "image"
+  ],
+  "bugs": {
+    "url": "https://github.com/128na/simutrans-makeobj-wrapper/issues"
+  },
+  "homepage": "https://github.com/128na/simutrans-makeobj-wrapper#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "128Na <simutrans.128na@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "src"
+    ]
+  }
+}
