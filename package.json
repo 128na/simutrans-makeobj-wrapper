@@ -1,10 +1,10 @@
 {
   "name": "simutrans-makeobj-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simutrans makrobj wrapper",
   "keywords": [
     "simutrans",
-    "image"
+    "makeobj"
   ],
   "bugs": {
     "url": "https://github.com/128na/simutrans-makeobj-wrapper/issues"
