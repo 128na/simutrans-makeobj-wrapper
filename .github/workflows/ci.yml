@@ -9,6 +9,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: install makeobj via apt
+        run: sudo apt install -y simutrans-makeobj
+
       - name: Checkout
         uses: actions/checkout@v2
 
