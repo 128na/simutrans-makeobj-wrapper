@@ -1,6 +1,6 @@
 {
   "name": "simutrans-makeobj-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simutrans makrobj wrapper",
   "keywords": [
     "simutrans",
@@ -14,7 +14,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "release": "npm run build && npm publish"
   },
   "author": "128Na <simutrans.128na@gmail.com>",
   "license": "MIT",
