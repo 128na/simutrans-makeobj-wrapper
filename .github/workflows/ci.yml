@@ -14,3 +14,5 @@ jobs:
 
       - name: test
         run: npm ci && npm run test
+        env:
+          MAKEOBJ_PATH: /usr/lib/simutrans/makeobj

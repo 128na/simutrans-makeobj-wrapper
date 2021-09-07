@@ -1,0 +1,19 @@
+obj=building
+name=
+copyright=
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+noInfo=
+dims=
+# mon, cur
+type=mon
+level=
+passengers=
+build_time=100
+chance=100
+noConstruction=0
+needs_ground=1
+climates=
+backImage[0][0][0][0][0]=image.0.0

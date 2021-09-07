@@ -1,0 +1,17 @@
+obj=citycar
+name=test1
+copyright=test2
+intro_year=1900
+intro_month=1
+retire_year=2999
+retire_month=1
+distributionWeight=1
+speed=100
+Image[S]=image.0.0
+Image[N]=image.0.0
+Image[E]=image.0.0
+Image[W]=image.0.0
+Image[SE]=image.0.0
+Image[NW]=image.0.0
+Image[NE]=image.0.0
+Image[SW]=image.0.0
