@@ -12,4 +12,8 @@ export default class MakeobjManager {
     expand(output: string, ...datFiles: string[]): MakeobjResult;
     extract(pakFileLib: string): MakeobjResult;
     exec(options: SpawnSyncOptions, ...args: string[]): MakeobjResult;
+    listNames(...pakFiles: string[]): {
+        pak: string;
+        objs: string[];
+    }[];
 }

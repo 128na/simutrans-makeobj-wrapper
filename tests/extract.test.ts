@@ -8,7 +8,6 @@ test('extract', () => {
   const makeobj = new Makeobj(process.env.MAKEOBJ_PATH);
   const result = makeobj.extract(pakfile);
   expect(result.isSuccess).toBeTruthy();
-  console.log({ result });
 
   const shouldExtractFiles = [
     './tests/extract/citycar.test1.pak',
