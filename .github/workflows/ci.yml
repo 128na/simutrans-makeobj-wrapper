@@ -12,10 +12,20 @@ jobs:
       - name: install makeobj via apt
         run: sudo apt install -y simutrans-makeobj
 
+      - name: confirm makeobj version
+        # install location
+        # https://ubuntu.pkgs.org/22.04/ubuntu-universe-arm64/simutrans-makeobj_122.0-1_arm64.deb.html
+        run: /usr/games/makeobj -h || true
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: test
         run: npm ci && npm run test
         env:
-          MAKEOBJ_PATH: /usr/lib/simutrans/makeobj
+          MAKEOBJ_PATH: /usr/games/makeobj
