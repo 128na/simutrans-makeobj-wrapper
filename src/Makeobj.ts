@@ -64,7 +64,6 @@ export default class MakeobjManager {
           res.push(tmp);
         }
         const t = line.match(regPak);
-        console.log({ t })
         tmp = {
           pak: t && t[1] ? t[1] : '',
           objs: []
