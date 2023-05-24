@@ -1,10 +1,10 @@
 import { readFileSync } from 'fs';
 import { pathExistsSync, removeSync } from 'fs-extra';
-import Makeobj from '../src/Makeobj';
+import Makeobj from '../../src/Makeobj';
 
 // makeobj for linux version is 60.2, required 60.5 or higher!
 test.skip('expand', () => {
-  const datfiles = ['./tests/expand/test1.dat', './tests/expand/test2.dat',];
+  const datfiles = ['./tests/__files__/expand/test1.dat', './tests/__files__/expand/test2.dat',];
   datfiles.map(pakfile => expect(pathExistsSync(pakfile)).toBeTruthy());
 
   const output = './tests/expand/expand.dat';

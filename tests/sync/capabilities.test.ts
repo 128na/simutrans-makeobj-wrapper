@@ -1,4 +1,4 @@
-import Makeobj from '../src/Makeobj';
+import Makeobj from '../../src/Makeobj';
 
 test('capabilities', () => {
   const makeobj = new Makeobj(process.env.MAKEOBJ_PATH);

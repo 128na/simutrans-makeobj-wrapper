@@ -1,11 +1,11 @@
 import { pathExistsSync, removeSync } from 'fs-extra';
-import Makeobj from '../src/Makeobj';
+import Makeobj from '../../src/Makeobj';
 
 test('merge', () => {
-  const pakfiles = ['./tests/merge/citycar.test1.pak', './tests/merge/vehicle.test2.pak',];
+  const pakfiles = ['./tests/__files__/merge/citycar.test1.pak', './tests/__files__/merge/vehicle.test2.pak',];
   pakfiles.map(pakfile => expect(pathExistsSync(pakfile)).toBeTruthy());
 
-  const output = './tests/merge/merged.pak';
+  const output = './tests/__files__/merge/merged.pak';
   expect(pathExistsSync(output)).toBeFalsy();
 
   const makeobj = new Makeobj(process.env.MAKEOBJ_PATH);
