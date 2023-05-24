@@ -12,6 +12,14 @@ jobs:
       - name: install makeobj via apt
         run: sudo apt install -y simutrans-makeobj
 
+      - name: confirm makeobj version
+        run: /usr/lib/simutrans/makeobj -h
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
       - name: Checkout
         uses: actions/checkout@v2
 
